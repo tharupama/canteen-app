@@ -66,23 +66,24 @@ export default function Admin() {
       ) : (
         <div className="grid grid-3">
           {orders.map(order => (
-            <div key={order.id} className="card">
-              <div className="card-body">
-                <h3 className="card-title">{order.mealName}</h3>
-                <p><strong>Quantity:</strong> {order.quantity}</p>
-                <p><strong>Price:</strong> Rs. {order.price}</p>
-                <p><strong>Comment:</strong> {order.comment || 'None'}</p>
-                <p className="text-sm text-gray-500">
-                  {new Date(order.timestamp?.toDate()).toLocaleString()}
-                </p>
-                <button
-                  onClick={() => handleMarkPrepared(order.id)}
-                  className="btn btn-success"
-                >
-                  Mark as Prepared
-                </button>
-              </div>
-            </div>
+          <div key={order.id} className="card">
+  <div className="card-body">
+    <h3 className="card-title">{order.mealName}</h3>
+    <p><strong>Student ID:</strong> <span style={{ fontWeight: 'bold', color: '#1a73e8' }}>{order.studentId}</span></p>
+    <p><strong>Quantity:</strong> {order.quantity}</p>
+    <p><strong>Price:</strong> Rs. {order.price}</p>
+    <p><strong>Comment:</strong> {order.comment || 'None'}</p>
+    <p className="text-sm text-gray-500">
+      {new Date(order.timestamp?.toDate()).toLocaleString()}
+    </p>
+    <button
+      onClick={() => handleMarkPrepared(order.id)}
+      className="btn btn-success"
+    >
+      Mark as Prepared
+    </button>
+  </div>
+</div>
           ))}
         </div>
       )}
