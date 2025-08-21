@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .card img {
+    height: 160px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
