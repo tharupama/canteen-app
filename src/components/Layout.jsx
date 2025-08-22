@@ -42,7 +42,7 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-      <footer className="bg-gray-800 text-white p-4 text-center" >
+      <footer className="bg-gray-800 text-white p-4 text-center" style={{  position: 'absolute', bottom: 0, width: '100%', zIndex:-1 }}>
         &copy; {new Date().getFullYear()} Faculty Canteen
       </footer>
     </div>

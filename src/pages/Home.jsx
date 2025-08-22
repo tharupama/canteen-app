@@ -1,13 +1,17 @@
 // src/pages/Home.jsx
+import canteen_img from '../assets/canteen.jpg';
 export default function Home() {
   return (
     <div className="text-center">
+      <div className="welcome">
       <h2 className="text-3xl font-bold mb-4">Welcome to Faculty Canteen</h2>
       <p className="text-lg">Quick, tasty meals for busy students.</p>
+      </div>
+
       <img
-        src="https://source.unsplash.com/random/800x400/?food,canteen"
+        src={canteen_img}
         alt="Canteen"
-        style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '10px', margin: '20px 0' }}
+        style={{ /* width: '50%', height: '50%', objectFit: 'cover', borderRadius: '10px', display: 'flex',  position: 'absolute', left: '25%',top: '20%'  */}}
       />
     </div>
   );

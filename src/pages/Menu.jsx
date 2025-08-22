@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const menuItems = [
-  { id: 1, name: 'Sandwich', price: 150, image: 'https://source.unsplash.com/random/200x200/?sandwich' },
-  { id: 2, name: 'Pasta', price: 200, image: 'https://source.unsplash.com/random/200x200/?pasta' },
-  { id: 3, name: 'Burger', price: 180, image: 'https://source.unsplash.com/random/200x200/?burger' },
-  { id: 4, name: 'Tea', price: 30, image: 'https://source.unsplash.com/random/200x200/?tea' },
+  { id: 1, name: 'Rice and curry with chicken', price: 150, image: 'https://source.unsplash.com/random/200x200/?sandwich' },
+  { id: 2, name: 'Rice and curry with fish', price: 200, image: 'https://source.unsplash.com/random/200x200/?pasta' },
+  { id: 3, name: 'Rice and curry with egg', price: 180, image: 'https://source.unsplash.com/random/200x200/?burger' },
+  { id: 4, name: 'Kottu', price: 30, image: 'https://source.unsplash.com/random/200x200/?tea' },
 ];
 
 export default function Menu() {
