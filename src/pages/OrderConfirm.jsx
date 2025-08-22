@@ -23,7 +23,7 @@ export default function OrderConfirm() {
 
   const handleSubmit = async () => {
     if (!order || !studentId.trim()) {
-      alert('Please enter your Student ID');
+      alert('Please enter your Mobile number');
       return;
     }
 
@@ -66,10 +66,10 @@ export default function OrderConfirm() {
           </div>
 
           <div className="form-group">
-            <label>Student ID <span style={{ color: 'red' }}>*</span></label>
+            <label>Mobile number <span style={{ color: 'red' }}>*</span></label>
             <input
               type="text"
-              placeholder="e.g. S2020100"
+              placeholder="e.g.+94765908387"
               value={studentId}
               onChange={(e) => setStudentId(e.target.value.trim())}
               required

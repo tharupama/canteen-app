@@ -69,7 +69,7 @@ export default function Admin() {
           <div key={order.id} className="card">
   <div className="card-body">
     <h3 className="card-title">{order.mealName}</h3>
-    <p><strong>Student ID:</strong> <span style={{ fontWeight: 'bold', color: '#1a73e8' }}>{order.studentId}</span></p>
+    <p><strong>Mobile number:</strong> <span style={{ fontWeight: 'bold', color: '#1a73e8' }}>{order.studentId}</span></p>
     <p><strong>Quantity:</strong> {order.quantity}</p>
     <p><strong>Price:</strong> Rs. {order.price}</p>
     <p><strong>Comment:</strong> {order.comment || 'None'}</p>

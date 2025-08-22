@@ -95,7 +95,7 @@ body {
   display: block;
   margin-bottom: 6px;
   font-weight: 600;
-  color: #444;
+  color: #ffffff;
 }
 
 .form-group input,
@@ -183,6 +183,9 @@ body {
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
+/* .grid-3 img{
+  width: 100%;
+} */
 
 /* Utilities */
 .text-center {

@@ -1,12 +1,16 @@
 // src/pages/Menu.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import chicken from '../assets/chicken.png';
+import fish from '../assets/fish.jpg';
+import egg from '../assets/egg.jpg';
+import kottu from '../assets/kottu.jpg';
 
 const menuItems = [
-  { id: 1, name: 'Rice and curry with chicken', price: 150, image: 'https://source.unsplash.com/random/200x200/?sandwich' },
-  { id: 2, name: 'Rice and curry with fish', price: 200, image: 'https://source.unsplash.com/random/200x200/?pasta' },
-  { id: 3, name: 'Rice and curry with egg', price: 180, image: 'https://source.unsplash.com/random/200x200/?burger' },
-  { id: 4, name: 'Kottu', price: 30, image: 'https://source.unsplash.com/random/200x200/?tea' },
+  { id: 1, name: 'Rice and curry with chicken', price: 150, image:chicken },
+  { id: 2, name: 'Rice and curry with fish', price: 200, image: fish },
+  { id: 3, name: 'Rice and curry with egg', price: 180, image: egg },
+  { id: 4, name: 'Kottu', price: 30, image:kottu },
 ];
 
 export default function Menu() {
